@@ -187,8 +187,10 @@ p {
 	color: #052145;  
 }
 
-.banner_left h2 span {
-	color: #F4775E;
+.banner_left h2 span { 
+	background: linear-gradient(to right, #F2826C, #7656c1);
+	-webkit-background-clip: text;
+	color: transparent;
 }
 
 .banner_left > p { 
@@ -248,8 +250,11 @@ p {
 	margin-bottom: 12px;
 }
 
+
 .section_title h2 span {
-	color: #F4775E;
+	background: linear-gradient(to right, #F2826C, #7656c1);
+	-webkit-background-clip: text;
+	color: transparent;
 }
 
 .section_title p{ 
@@ -546,8 +551,11 @@ button:focus-within {
 	
 }
 
+
 .operation_left h3 span {
-	color: #F4775E;
+	background: linear-gradient(to right, #F2826C, #7656c1);
+	-webkit-background-clip: text;
+	color: transparent;
 }
 
 .operation_left p{  
@@ -589,7 +597,7 @@ button:focus-within {
 }
 
 .footer_single ul li a:hover {
-	color: #052145;
+	color: #0091FF;
 }
 
 .footer_bottom{
