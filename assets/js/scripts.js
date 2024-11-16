@@ -7,13 +7,15 @@ $(document).ready(function(){
 	// });
 
 	// Banner Carousel
-	// $('.banner_carousel').owlCarousel({
-	// 	items:1,
-	// 	loop:true,
-	// 	nav:true,
-	// 	dots:true,
-	// 	autoplay:true,
-	// });
+	$('.customer_carousel').owlCarousel({
+		items:2,
+		loop:true,
+		nav:true,
+		dots:true,
+		autoplay:true,
+		margin: 20,
+		navText: ["<img src='assets/images/home/customer/left.png'>","<img src='assets/images/home/customer/right.png'>"]
+	});
 
 
 

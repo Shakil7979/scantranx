@@ -1,5 +1,5 @@
  
-
+@import url(https://db.onlinewebfonts.com/c/f4d849075c9b4c0047fc56a828879854?family=Recoleta+Bold); 
 html{
 	font-size: 62.5%;
 	overflow-x: hidden;
@@ -21,20 +21,634 @@ ul{
 ul li a,a{
 	text-decoration: none;
 }
-/*======================  Start Page  ======================*/
 
 
 
+p {  
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 30px;   
+}
 
 
+/*======================  Start Home Page  ======================*/
+.top_header {
+	background: #0074CC;
+	padding: 14px 0;
+}
 
+.top_header_content p {
+    font-family: "Recoleta Bold";
+	font-style: normal;
+	font-weight: 800;
+	font-size: 16px;
+	line-height: 22px;  
+	color: #FFFFFF;
+	text-align: center;
+} 
+
+.menu ul li a {  
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 19px; 
+	color: #052145;
+	transition: 0.3s;  
+}
+
+.menu ul li a:hover {
+	color: #0091FF;
+}
+
+.free_demo_btn i {
+	transform: rotate(-46deg);
+	margin-left: 5px;
+}
+
+.btn_1 { 
+	box-sizing: border-box; 
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 12px 20px;
+	gap: 10px;  
+	background: #FFFFFF;
+	border: 1px solid #052145;
+	border-radius: 10px;
+	display: inline-block; 
+	font-family: 'TT Norms Pro';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px; 
+	color: #052145;  
+	transition: 0.3s;
+}
+
+.btn_1:hover {
+	background-color: #052145;
+	color: #fff;
+}
+
+.btn_2 { 
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 12px 20px;
+	gap: 10px;  
+	background: #0091FF;
+	border-radius: 10px; 
+	font-family: 'TT Norms Pro';
+	font-style: normal;
+	font-weight: 400;
+	border: 1px solid transparent;
+	font-size: 16px;
+	line-height: 24px; 
+	color: #FFFFFF;  
+	display: inline-block; 
+	transition: 0.3s; 
+}
+
+.btn_2:hover {
+	background: transparent;
+	color: #0091FF;
+	border: 1px solid #0091FF;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.menu ul {
+	display: flex;
+	gap: 22px;
+}
+
+.header_login_btn ul {
+	display: flex;
+	align-items: center;
+	gap: 15px;
+}
+
+.main_header {
+	padding: 12px 0;
+	background: #ffff;
+}
+
+.drop_down_menu {
+	flex-direction: column;
+	gap: 2px !important;
+	position: absolute;
+	width: 120px;
+	background: #fff;
+	box-shadow: 0 2px 10px #ddd;
+	padding: 10px;
+	border-radius: 5px;
+	top: 30px;
+	opacity: 0;
+	visibility: hidden;
+}
+.menu ul li i,
+.menu ul li{
+	transition: 0.3s;
+}
+
+.menu ul li:hover .drop_down_menu { 
+	opacity: 1;
+	visibility: visible;
+} 
+
+.menu ul li:hover i {
+	transform: rotate(180deg);
+} 
+
+.menu ul li {
+	position: relative;
+}
+
+.banner_img img {
+	width: 100%;
+}
+
+.banner_area {
+	background: #FFF2E9;
+	padding: 82px 0 71px 0;
+}
+
+.banner_left h2 { 
+    font-family: "Recoleta Bold"; 
+	font-style: normal;
+	font-weight: 400;
+	font-size: 44px;
+	line-height: 60px; 
+	color: #052145;  
+}
+
+.banner_left h2 span {
+	color: #F4775E;
+}
+
+.banner_left > p { 
+	font-family: 'TT Norms Pro';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 30px; 
+	color: #052145;  
+	margin-top: 20px;
+}
+
+
+.banner_left h5 { 
+    font-family: "Recoleta Bold"; 
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 26px; 
+	color: #052145;  
+	margin: 20px 0 37px 0;
+}
+
+.banner_btn {
+	display: flex;
+	gap: 15px;
+	margin-bottom: 32px;
+}
+
+.banner_intergrates ul {
+	display: flex;
+	align-items: center;
+	gap: 30px;
+}
+
+.banner_intergrates p {
+	font-family: 'TT Norms Pro';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 30px; 
+	color: #052145;   
+}
+
+.section_padding{
+	padding: 90px 0 ;
+}
+
+.section_title h2{ 
+	font-family: 'Recoleta-Bold';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 32px;
+	line-height: 44px; 
+	text-align: center; 
+	color: #052145;  
+	margin-bottom: 12px;
+}
+
+.section_title h2 span {
+	color: #F4775E;
+}
+
+.section_title p{ 
+	font-family: 'TT Norms Pro';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 30px; 
+	text-align: center; 
+	color: #052145; 
+	width: 840px;
+  	margin: 0 auto; 
+}
+
+.section_title{
+	margin: 0 auto 30px auto;
+	text-align: center;
+}
+
+.business_retail_video iframe{
+	width: 100%;
+	height: 820px;
+}
+
+.our_platform_area .section_title {
+	width: 1034px;
+	margin-bottom: 30px;
+}
+
+.our_platform_area{
+	margin-top: 90px;
+}
+
+.software_area .section_title p { 
+	width: 100%; 
+}
+
+.software_area{
+	background: #052145;
+}
+
+.software_area .section_title p, 
+.software_area .section_title h2 { 
+	color: #fff; 
+}
+
+.single_software {
+	border: 1px solid #073269;
+	padding: 40px 25px;
+	border-radius: 15px;
+	text-align: center; 
+	color: #FFFFFF;  
+	transition: 0.3s; 
+	height: 100%;
+}
+
+.single_software h4 { 
+	font-family: 'Recoleta-Bold';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 27px;
+	text-align: center;  
+	margin: 30px 0 10px 0;
+}
+
+.single_software p { 
+	font-family: 'TT Norms Pro';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;  
+}
+
+.single_software:hover {
+	background: #fff;
+	color: #052145 !important;
+}
+
+.possible_cont { 
+	padding: 20px;  
+	background: #D6E7FC;
+	border-radius: 10px; 
+}
+
+.possible_cont a { 
+	font-size: 14px;
+	color: #052145;
+	text-decoration: underline;
+}
+
+.possible_img {
+	margin-top: 18px;
+}
+
+ .possible_right h2 { 
+	font-family: 'Recoleta-Bold';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 32px;
+	line-height: 44px;  
+	color: #052145;  
+ }
+
+ .system_area{
+	background: #052145;
+ }
+
+ .system_area .possible_right p,
+ .system_area .possible_right h2{
+	color: #fff;
+ }
+
+ .single_system {
+	width: 100%;
+	background: #fff;
+	margin-bottom: 20px;
+	padding: 27px;
+	border-radius: 10px;
+	display: flex;
+	align-items: center;
+	gap: 25px;
+}
+
+ .single_system h5 { 
+	font-family: 'Recoleta-Bold';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 26px; 
+	text-align: center; 
+	color: #052145;  
+}
+
+.customer_area .section_title { 
+	width: 63%;
+}
+
+.single_customer {
+	padding: 30px 25px;
+	text-align: center;
+	border: 1px solid #ddd;
+	border-radius: 10px;
+}
+.single_customer_img{
+	text-align: center;
+}
+
+.single_customer_img img {
+	margin: 0 auto;
+	width: 120px !important;
+}
+
+.customer_content p {   
+	text-align: center; 
+	color: #052145;  
+	margin: 20px 0;
+}
+
+
+.customer_name h5 {    
+	font-family: 'Recoleta-Bold';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 27px;
+	text-align: center; 
+	color: #052145;  
+	margin-bottom: 4px;
+}
+
+.customer_name p {   
+	font-family: 'TT Norms Pro';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px; 
+	text-align: center; 
+	color: #052145;  
+}
+
+button:focus-within {
+	outline: none;
+}
+
+.customer_carousel{
+	position: relative;
+}
+
+.owl-prev {
+	position: absolute;
+	top: 40%;
+	left: -75px;
+}
+
+.owl-next {
+	position: absolute;
+	top: 40%;
+	right: -75px;
+}
+.customer_carousel.owl-theme .owl-nav [class*="owl-"]:hover {
+	background: transparent; 
+}
+
+.owl-dot.active span {
+	width: 12px !important;
+	height: 12px !important;
+	background: #0091FF !important;
+}
+
+.question_accordion .accordion-button:not(.collapsed)::after {
+	background-image: url(../images/home/question/minus.png); 
+}
+
+.question_accordion .accordion-button::after { 
+	background-image: url(../images/home/question/plus.png);
+}
+
+.question_accordion .accordion-button:not(.collapsed) { 
+	background-color: transparent; 
+	border-bottom: none !important;
+}
+
+.question_accordion .accordion-item {
+	margin-bottom: 20px;
+	border: 1px solid #ddd;
+}
+
+.question_accordion .accordion-button { 
+	border: 1px solid #ddd;
+}
+
+.question_accordion .accordion-item { 
+	border: none;
+}
+
+.question_accordion .accordion-body { 
+	border: 1px solid #ddd;
+	border-top: 1px solid transparent;
+}
+
+.question_accordion .accordion-button{ 
+	font-family: 'Recoleta-Bold';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 26px; 
+	color: #052145;  
+}
+
+.question_accordion .question_accordion {
+	width: 1120px;
+	margin: 0 auto;
+}
+
+.question_accordion .accordion-body p{ 
+	font-family: 'TT Norms Pro';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 30px; 
+	color: #052145; 
+
+}
+
+.question_accordion .accordion-button:not(.collapsed) {
+	color: #052145; 
+}
+
+.trusted_img {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+ 
+.operation_btn {
+	display: flex;
+	gap: 15px;
+	margin-bottom: 32px;
+	justify-content: flex-end;
+}
+
+.operation_area {
+	background: #052145;
+}
+
+.operation_left h3 { 
+	font-family: 'Recoleta-Bold';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 32px;
+	line-height: 44px; 
+	color: #FFFFFF; 
+	
+}
+
+.operation_left h3 span {
+	color: #F4775E;
+}
+
+.operation_left p{  
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 30px; 
+	color: #FFFFFF;  
+	margin-top: 12px;
+}
+
+.operation_left {
+	width: 92%;
+}
+
+.footer {
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer_single h3{ 
+	font-family: 'Recoleta-Bold';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 27px; 
+	color: #052145;  
+	margin-bottom: 10px;
+}
+
+.footer_single ul li a{ 
+	font-family: 'TT Norms Pro';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 40px; 
+	color: #052145;  
+	transition: 0.3s;
+}
+
+.footer_single ul li a:hover {
+	color: #052145;
+}
+
+.footer_bottom{
+	margin: 35px 0;
+}
+
+.footer_social ul {
+	display: flex;
+	gap: 20px;
+	justify-content: flex-end;
+}
+
+.footer_social ul li a {
+	color: #000;
+	font-size: 24px;
+	transition: 0.3s;
+}
+
+.footer_social ul li a:hover {
+	color: #0091FF;
+}
+
+.footer_left > a {
+	margin-bottom: 14px;
+}
+
+.footer_left p { 
+	font-family: 'TT Norms Pro';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 40px;  
+	color: #052145;  
+}
+
+.footer_copy_right {
+	padding: 40px 0;
+	text-align: center;
+	border-top: 1px solid #ddd;
+}
+
+.footer_copy_right p { 
+	font-family: 'TT Norms Pro';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 40px;  
+	color: #052145;  
+}
+
+.footer_area{
+	padding-top: 90px;
+}
 
 /*======================  End Page  ======================*/
 
 
 
 /* 
-font-family: 'Recoleta DEMO';
-font-family: 'TT Norms Pro';
+    font-family: "Recoleta-Bold"; 
 
  */
