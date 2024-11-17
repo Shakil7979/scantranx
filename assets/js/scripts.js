@@ -1,10 +1,10 @@
 $(document).ready(function(){
 	// Mobile Menu
-	// $('.logo a i').click(function(){
-	// 	$('.menu ul').slideToggle(1000);
+	$('.mobile_bars').click(function(){
+		$('.menu').slideToggle();
 
-	// 	return false
-	// });
+		return false
+	});
 
 	// Banner Carousel
 	$('.customer_carousel').owlCarousel({
@@ -14,7 +14,42 @@ $(document).ready(function(){
 		dots:true,
 		autoplay:true,
 		margin: 20,
-		navText: ["<img src='assets/images/home/customer/left.png'>","<img src='assets/images/home/customer/right.png'>"]
+		navText: ["<img src='assets/images/home/customer/left.png'>","<img src='assets/images/home/customer/right.png'>"],
+		responsive:{
+			0:{
+			  items:1,
+			  dots:false,
+			},
+			600:{
+			  items:2,
+			  dots:false,
+			},
+			1000:{
+			  items:2,
+			  dots:true,
+			} 
+		  }
+	});
+
+	// Banner Carousel
+	$('.trusted_img').owlCarousel({
+		items:5,
+		loop:true,
+		nav:false,
+		dots:false,
+		autoplay:true,
+		margin: 20, 
+		responsive:{
+			0:{
+			  items:2,  
+			},
+			600:{
+			  items:3, 
+			},
+			1000:{
+			  items:5, 
+			} 
+		  }
 	});
 
 

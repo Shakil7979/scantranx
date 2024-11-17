@@ -7,6 +7,7 @@ html{
 body{	
 	font-size: 1.6rem; 
 	font-weight: 400;
+	overflow-x: hidden;
 	font-family: 'TT Norms Pro';
 }
 h1,h2,h3,h4,h5,h6,p{
@@ -444,13 +445,13 @@ button:focus-within {
 	position: relative;
 }
 
-.owl-prev {
+.customer_carousel .owl-prev {
 	position: absolute;
 	top: 40%;
 	left: -75px;
 }
 
-.owl-next {
+.customer_carousel .owl-next {
 	position: absolute;
 	top: 40%;
 	right: -75px;
@@ -652,8 +653,30 @@ button:focus-within {
 	padding-top: 90px;
 }
 
-/*======================  End Page  ======================*/
+.mobile_bars{
+	display: none;
+}
 
+.mobile_bars i {
+	font-size: 40px;
+	color: #000;
+}
+
+.desktop_show{
+	display: block;
+} 
+.mobile_show{
+	display: none;
+} 
+
+.single_trusted {
+	height: 112px;
+	display: flex;
+	align-items: center;
+}
+
+
+/*======================  End Page  ======================*/
 
 
 /* 
