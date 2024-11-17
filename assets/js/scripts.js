@@ -51,9 +51,56 @@ $(document).ready(function(){
 			} 
 		  }
 	});
+ 
 
+	$(document).on('click','.close_modal, .modal_close_overlay', function(){
+		$('.modal_main_login').hide();
+		$('.modal_close_overlay').hide();
+		$('.modal_main_ebook').hide();
+		$('.modal_main_registraion').hide();
+		return false;
+	})
 
+	$(document).on('click','.login_show_form, .show_login_modal', function(){
+		$('.modal_close_overlay').show();
+		$('.modal_main_registraion').hide();
+		$('.modal_main_ebook').hide();
+		$('.modal_main_login').show(); 
+		return false;
+	})
 
+	$(document).on('click','.show_registraion_modal', function(){
+		$('.modal_close_overlay').show();
+		$('.modal_main_login').hide();
+		$('.modal_main_ebook').hide();
+		$('.modal_main_registraion').show();
+		return false;
+	})
+
+	$(document).on('click','.free_e_book_modal_show', function(){
+		$('.modal_close_overlay').show();
+		$('.modal_main_login').hide();
+		$('.modal_main_registraion').hide();
+		$('.modal_main_login').hide();
+		$('.modal_main_ebook').show();
+		return false;
+	})
+ 
+	$('.eye_password').on('click', function () {
+		const passwordInput = $('#password');
+		const icon = $(this).find('i');
+ 
+		if (passwordInput.attr('type') === 'password') {
+			passwordInput.attr('type', 'text');
+			icon.removeClass('fa-eye').addClass('fa-eye-slash');  
+		} else {
+			passwordInput.attr('type', 'password');
+			icon.removeClass('fa-eye-slash').addClass('fa-eye');  
+		}
+
+		return false;
+	}); 
+	
 
 
 });

@@ -33,7 +33,7 @@
             <div class="top_header">
                 <div class="container">
                     <div class="top_header_content">
-                        <p>Get a FREE e-book on 4 proven strategies to increase your sale</p>
+                        <p>Get a <button class="free_e_book_modal_show">FREE</button> e-book on 4 proven strategies to increase your sale</p>
                     </div>
                 </div>
             </div>
@@ -66,12 +66,12 @@
                                     </ul>
                                 </li>
                                 <li><a href="#">Contact</a></li> 
-                                <li><a href="#" class="btn_1 mobile_show">Login</a></li>
+                                <li><button type="button" class="btn_1 mobile_show login_show_form">Login</button></li>
                             </ul>
                         </div>
                         <div class="header_login_btn">
                             <ul>
-                                <li><a href="#" class="btn_1 desktop_show">Login</a></li>
+                                <li><button type="button" class="btn_1 desktop_show login_show_form">Login</button></li>
                                 <li><a href="#" class="btn_2 free_demo_btn">Free Demo <i class="fa-solid fa-arrow-right"></i></a></li>
                                 <li><a href="#" class="mobile_bars"><i class="fas fa-bars"></i></a></li>
                             </ul>
@@ -80,6 +80,157 @@
                 </div>
             </div>
         </header>
+        <!-- modal is here  --> 
+
+        <div class="modal_close_overlay"></div>
+        <!-- login modal  -->
+        <div class="modal_main_login"> 
+            <div class="login_modal">
+                <div class="sk_modal_content">
+                    <div class="modal_header">
+                        <h3>Scantranx Login</h3>
+                        <button class="close_modal"><i class="fa-solid fa-xmark"></i></button>
+                    </div>
+                    <div class="modal_form">
+                        <form action="#">
+                            <div class="login_form"> 
+                                <div class="form_group">
+                                    <input type="email" placeholder="Enter email">
+                                    <i class="fa-regular fa-envelope"></i>
+                                </div>
+                                <div class="form_group">
+                                    <input type="password" id="password" placeholder="Enter password">
+                                    <i class="fa-solid fa-lock"></i>
+                                    <button class="eye_password"><i class="fa-regular fa-eye"></i></button>
+                                </div>
+                                <a href="#">Forget password</a>
+                                <div class="btn_login">
+                                    <button type="submit" class="btn_2 free_demo_btn">Login <i class="fa-solid fa-arrow-right"></i></button> 
+                                    <p>Don’t have an account? <button class="btn_log_reg show_registraion_modal">Register</button></p>
+                                </div>
+                            </div>
+                        </form>
+                    </div> 
+                </div>
+            </div>   
+        </div>  
+
+        <!-- registraion modal  -->
+        <div class="modal_main_registraion"> 
+            <div class="login_modal">
+                <div class="sk_modal_content">
+                    <div class="modal_header">
+                        <div class="modal_title">  
+                            <h3>Create your free Scantranx Account</h3>
+                            <p>Enjoy 14 days free Trial on paid plans. No Credit Card Required.</p>
+                        </div>
+                        <button class="close_modal"><i class="fa-solid fa-xmark"></i></button>
+                    </div>
+                    <div class="modal_form">
+                        <form action="#">
+                            <div class="login_form"> 
+                                <div class="form_group">
+                                    <input type="text" placeholder="Account name">
+                                    <i class="fa-regular fa-user"></i>
+                                    <span class="email_for_reg">.scantranx.com</span>
+                                </div> 
+                                <div class="form_group">
+                                    <input type="text" placeholder="Business name">
+                                    <i class="fa-regular fa-envelope"></i>
+                                </div> 
+                                <div class="form_group"> 
+                                    <select name="" id="">
+                                        <option value="Country">Country</option>
+                                        <option value="bangladesh">bangladesh</option>
+                                        <option value="bangladesh">bangladesh</option>
+                                        <option value="bangladesh">bangladesh</option>
+                                        <option value="bangladesh">bangladesh</option>
+                                        <option value="bangladesh">bangladesh</option>
+                                    </select>
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </div> 
+                                <div class="form_group">
+                                    <input type="text" placeholder="Phone number">
+                                    <i class="fa-solid fa-phone"></i>
+                                </div> 
+                                <div class="form_group">
+                                    <input type="email" placeholder="Enter email">
+                                    <i class="fa-regular fa-envelope"></i>
+                                </div> 
+                                <div class="form_group"> 
+                                    <select name="" id="">
+                                        <option value="">Select plan i.e Basic - $19.99/month</option> 
+                                        <option value="">Select plan i.e Basic - $19.99/month</option> 
+                                        <option value="">Select plan i.e Basic - $19.99/month</option> 
+                                        <option value="">Select plan i.e Basic - $19.99/month</option> 
+                                        <option value="">Select plan i.e Basic - $19.99/month</option> 
+                                    </select>
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </div> 
+                                <div class="form_group check_box">
+                                    <input class="checkbox-input" type="checkbox" id="checkbox-1" />
+                                    <label for="checkbox-1">By signing up you agree to the Scantranx <a href="#">Terms and Conditions</a> and <a href="#">Privacy Policy</a></label>
+                                </div>
+                                <div class="btn_login">
+                                    <button type="submit" class="btn_2 free_demo_btn">Create Account <i class="fa-solid fa-arrow-right"></i></button> 
+                                    <p>Already have an account? <button class="btn_log_reg show_login_modal">Login</button></p>
+                                </div>
+                            </div>
+                        </form>
+                    </div> 
+                </div>
+            </div>   
+        </div>  
+
+        <!-- Free ebook modal  -->
+        <div class="modal_main_ebook"> 
+            <div class="login_modal">
+                <div class="sk_modal_content">
+                    <div class="modal_header">
+                        <div class="modal_title">  
+                            <h3>Complete the form to Download</h3>
+                            <p>Get Free E-Book on 4 Ways to Start Winning in your Retail Business</p>
+                        </div>
+                        <button class="close_modal"><i class="fa-solid fa-xmark"></i></button>
+                    </div>
+                    <div class="modal_form">
+                        <form action="#">
+                            <div class="login_form"> 
+                                <div class="form_group">
+                                    <input type="text" placeholder="Full name">
+                                    <i class="fa-regular fa-user"></i> 
+                                </div> 
+                                <div class="form_group">
+                                    <input type="text" placeholder="Business name">
+                                    <i class="fa-regular fa-envelope"></i>
+                                </div> 
+                                <div class="form_group"> 
+                                    <select name="" id="">
+                                        <option value="Country">Position i.e Business Owner</option> 
+                                        <option value="Country">Position i.e Business Owner</option> 
+                                        <option value="Country">Position i.e Business Owner</option> 
+                                        <option value="Country">Position i.e Business Owner</option> 
+                                    </select>
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </div> 
+                                <div class="form_group">
+                                    <input type="text" placeholder="Phone number">
+                                    <i class="fa-solid fa-phone"></i>
+                                </div> 
+                                <div class="form_group">
+                                    <input type="email" placeholder="Enter email">
+                                    <i class="fa-regular fa-envelope"></i>
+                                </div>  
+                                <div class="btn_login">
+                                    <button type="submit" class="btn_2 free_demo_btn">Download E-Book<i class="fa-solid fa-arrow-right"></i></button></p>
+                                </div>
+                            </div>
+                        </form>
+                    </div> 
+                </div>
+            </div>   
+        </div>  
+
         <!--=====================  End Header Area  ====================-->
 
         <main class="main_area"> 
