@@ -174,6 +174,36 @@
         font-size: 14px; 
         line-height: 20px;
     }
+    .modal_header button, .modal_header h3 { 
+        font-size: 16px !important;
+        line-height: 20px; 
+    }
+    .modal_title p, .btn_login p { 
+        font-size: 14px;
+        line-height: 20px; 
+    }
+    .form_group select, .form_group input { 
+        padding: 8px 16px 8px 35px;
+        border: 1px solid #052145; 
+        font-size: 14px;
+        line-height: 24px; 
+    }
+    .email_for_reg {
+        padding: 8px 16px 8px 10px;
+        border: 1px solid transparent; 
+        font-size: 14px;
+        line-height: 24px; 
+    }
+    .form_group > i {
+        font-size: 16px; 
+        top: 12px; 
+    }
+    .login_modal { 
+        padding: 20px 15px; 
+    }
+    .feature_btn_slide .owl-next { 
+        right: 0;
+    }
 }
 
 @media all and (max-width: 450px){

@@ -51,6 +51,33 @@ $(document).ready(function(){
 			} 
 		  }
 	});
+
+	// Banner Carousel
+	$('.feature_btn_slide').owlCarousel({
+		items:5.5,
+		loop:true,
+		nav:true,
+		dots:false,
+		autoplay:false,
+		navText: ["<img src='assets/images/home/customer/left.png'>","<img src='assets/images/home/customer/right.png'>"],
+		margin: 20, 
+		responsive:{
+			0:{
+			  items:2,  
+			},
+			600:{
+			  items:3, 
+			},
+			1000:{
+			  items:5.5, 
+			} 
+		  }
+	});
+
+	$('.feature_btn_slide .nav-link').on('click', function () {
+        $('.feature_btn_slide .nav-link').removeClass('active'); // Remove active class from all tabs
+        $(this).addClass('active'); // Add active class to the clicked tab
+    });
  
 
 	$(document).on('click','.close_modal, .modal_close_overlay', function(){
