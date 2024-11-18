@@ -127,6 +127,14 @@ $(document).ready(function(){
 
 		return false;
 	}); 
+
+	$(window).on('scroll', function () {
+		if ($(window).scrollTop() > 52) {
+			$('.main_header').addClass('fixed');
+		} else {
+			$('.main_header').removeClass('fixed');
+		}
+	});
 	
 
 
