@@ -174,9 +174,31 @@ p {
 	width: 100%;
 }
 
-.banner_area {
-	background: #FFF2E9;
+.banner_area { 
 	padding: 82px 0 71px 0;
+	position: relative;
+	overflow: hidden;
+}
+
+.banner_blur_1 {
+	position: absolute;
+	right: -100px;
+	top: 0;
+	z-index: 9;
+	width: 700px;
+}
+
+.banner_blur_2 {
+	position: absolute;
+	left: 100px;
+	bottom: -50%;
+	z-index: 9;
+	width: 700px;
+}
+
+.banner{
+	position: relative;
+	z-index: 99;
 }
 
 .banner_left h2 { 
@@ -266,7 +288,7 @@ p {
 	line-height: 30px; 
 	text-align: center; 
 	color: #052145; 
-	width: 840px;
+	max-width: 840px;
   	margin: 0 auto; 
 }
 
@@ -290,7 +312,7 @@ p {
 }
 
 .software_area .section_title p { 
-	width: 100%; 
+	max-width: 100%; 
 }
 
 .software_area{
@@ -885,6 +907,11 @@ button:focus-within {
 	width: 100%;
 }
 
+
+/*==============  Feature CSS ===============*/
+
+
+
 .featoure_btn_carousel .nav-tabs .nav-link { 
 	border: none;
 }
@@ -951,6 +978,89 @@ button:focus-within {
 	z-index: 999999999;
 }
 
+
+/*====================== Hardware CSS  ======================*/
+
+.hardware_content h4 { 
+	font-family: 'Recoleta-Bold';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 27px;
+	text-align: center; 
+	color: #052145; 
+	margin-bottom: 18px;
+}
+
+.hardware_content ul li p {  
+	font-family: 'TT Norms Pro';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px; 
+	color: #052145; 
+}
+ 
+.hardware_img {
+	max-width: 320px;
+	max-height: 320px;
+	margin: 0 auto;
+	text-align: center;
+	margin-bottom: 40px;
+}
+ 
+.hardware_img img {
+	width: 100%; 
+	height: 100%;
+}
+
+.single_ware{
+	border: 1px solid #eeee;
+	padding: 30px 52px;
+	border-radius: 15px;
+	height: 100%;
+	background: #fff;
+}
+
+.hardware_content ul li {
+	display: flex;
+	align-items: center;
+	gap: 6px;
+	margin-bottom: 15px;
+}
+
+.hardware_area{
+	position: relative;
+}
+
+.hardwarea {
+	position: relative;
+	z-index: 99;
+}
+
+.hardware_blur{
+	position: absolute;
+	right: 0;
+	bottom: 131px ;
+	z-index: 9;
+}
+
+.hardware_blur img{
+	width: 700px;
+}
+
+.quickbook_content { 
+	margin: 20px 0 5px 0;
+}
+
+.conntecitivity .section_title p { 
+	max-width: 1031px; 
+}
+
+.banner_left > p a { 
+	color: #052145; 
+	text-decoration: underline;
+}
 
 /*======================  End Page  ======================*/
 
