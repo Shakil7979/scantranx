@@ -1319,14 +1319,27 @@ button:focus-within {
 	justify-content: center;
 }
 
-/* .partners_single {
-	height: 63px;
-	width: 170px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-} */
+.input_group input {
+	width: 100%;
+	max-width: 509px;
+	height: 48px;
+	border-radius: 10px;
+	border: 1px solid #ddd;
+	padding: 0 15px 0 40px;
+	font-size: 16px;
+}
 
+.input_group {
+	position: relative;
+}
+
+.input_group i {
+	position: absolute;
+	top: 14px; 
+	left: 16px;
+	font-size: 20px;
+	color: #6c6c6c;
+}
 
 /*======================  End Page  ======================*/
 
