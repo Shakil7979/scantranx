@@ -55,8 +55,19 @@
         left: 0;
         top: 100%;
         padding: 25px 0;
-        z-index: 99;
+        z-index: 999999;
         display: none;
+    }
+    .pricng_box{
+        overflow-x: scroll;
+    }
+    .prici_head a {  
+        display: block;
+        width: 160px;
+        margin-top: 24px;
+    }
+    .price_bodt {  
+        width: 230px;
     }
     .menu ul {
         gap: 10px !important;  
@@ -72,8 +83,11 @@
     .mobile_show{
         display: block;
     } 
-    .mobile_bars{
+    .mobile_bars {
         display: block;
+        width: 40px;
+        height: 40px;
+        text-align: center;
     }
     .logo img {
         width: 140px;
@@ -114,6 +128,20 @@
     }
     .banner_img {
         margin-top: 40px;
+    }
+    .link_blog { 
+        font-size: 25px;
+        line-height: 28px;  
+    }
+    .feature_box > h3 { 
+        font-size: 22px; 
+        margin-bottom: 10px;
+    }
+    .single_blog_items {
+        margin-bottom: 26px;
+    }
+    .feature_text {
+        margin-top: 25px;
     }
     .section_padding {
         padding: 45px 0;
@@ -174,9 +202,20 @@
         font-size: 14px; 
         line-height: 20px;
     }
+    .link_blog_item { 
+        font-size: 18px; 
+    }
     .modal_header button, .modal_header h3 { 
         font-size: 16px !important;
         line-height: 20px; 
+    }
+    .feature_text p { 
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .link_blog {
+        font-size: 22px;
+        line-height: 28px;
     }
     .modal_title p, .btn_login p { 
         font-size: 14px;
@@ -207,6 +246,9 @@
 }
 
 @media all and (max-width: 450px){
-	
+    .blog_area .section_title h2 {
+        font-size: 24px;
+        line-height: 40px;
+    }
 }
  

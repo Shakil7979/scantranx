@@ -1,10 +1,14 @@
 $(document).ready(function(){
 	// Mobile Menu
-	$('.mobile_bars').click(function(){
+	$('.mobile_bars').click(function () {
 		$('.menu').slideToggle();
-
-		return false
+	
+		// Toggle between 'fa-bars' and 'fa-times' icons
+		$(this).find('i').toggleClass('fa-bars fa-times');
+	
+		return false;
 	});
+	
 
 	// Banner Carousel
 	$('.customer_carousel').owlCarousel({

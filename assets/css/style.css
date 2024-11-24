@@ -39,6 +39,10 @@ p {
 	padding: 14px 0;
 }
 
+.header_area {
+	box-shadow: 0 20px 50px 0 #0000000f;
+}
+
 .top_header_content p {
     font-family: "Recoleta Bold";
 	font-style: normal;
@@ -1060,6 +1064,239 @@ button:focus-within {
 .banner_left > p a { 
 	color: #052145; 
 	text-decoration: underline;
+}
+
+.pricng_box table {
+	width: 100%;
+}
+
+.price_bodt {
+	display: flex;
+	align-items: center;
+	gap: 4px;
+}
+ 
+
+.pricing_body p {
+	font-family: 'TT Norms Pro';
+	font-style: normal; 
+	font-size: 16px;
+	line-height: 19px; 
+	color: #052145; 
+}
+
+.pricng_box thead {
+	background: #052145; 
+	overflow: hidden;
+	border-radius: 20px 20px 0 0;
+}
+
+.pricng_box thead tr td { 
+	padding: 21px;
+} 
+
+.pricng_box thead tr td h5,
+.prici_head h5{  
+	font-family: 'Recoleta-Bold';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 26px; 
+	color: #FFFFFF;  
+}
+
+.prici_head h3{   
+	font-family: 'Recoleta-Bold';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 26px;
+	line-height: 34px; 
+	color: #FFFFFF; 
+	margin: 8px 0;
+	height: 34px;
+}
+
+.prici_head a {
+	background: transparent;
+	border: 1px solid #fff;
+}
+
+
+.prici_head h3 sub{ 
+	font-weight: 400 !important;
+}
+
+.pricing_body td {
+	padding: 20px;
+	border: 1px solid #ddd;
+}
+
+.pricing_body tr td {
+	text-align: center;
+}
+ 
+.last_tbale_tr td {
+	border: none;
+}
+
+.link_blog { 
+	font-family: 'Recoleta-Bold';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 32px;
+	line-height: 44px;
+	color: #052145; 
+	margin-bottom: 20px;
+	display: block;
+	cursor: pointer;
+}
+
+ 
+.feature_blog_img img {
+	width: 100%;
+}
+
+.feature_text span {
+	display: block;
+	margin: 12px 0; 
+	font-family: 'TT Norms Pro';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	color: #052145; 
+}
+
+.feature_text p { 
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 25px;
+}
+
+.blog_item_img{
+	margin-bottom: 14px;
+}
+
+.link_blog_item { 
+	font-family: 'Recoleta-Bold';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 27px;
+	color: #052145; 
+	margin-bottom: 10px;
+	display: block;
+	cursor: pointer;
+}
+
+.single_blog_items span {  
+	font-size: 14px; 
+}
+
+.feature_box{
+	margin-bottom: 70px;
+}
+
+.blog_item_img{
+	position: relative;
+} 
+
+.feature_blog_img.blog_item_img a {
+	position: absolute;
+	top: 16px;
+	left: 16px;
+	width: 91px;
+	height: 35px;
+	font-size: 14px;
+	padding: 0;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.feature_blog_img.blog_item_img a:hover {
+	color: #fff;
+	background: #0091FF;
+	border: 1px solid transparent;
+}
+
+.feature_box > h3 { 
+	font-family: 'Recoleta-Bold';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 32px;
+	line-height: 44px;
+	color: #052145; 
+	margin-bottom: 20px;
+}
+
+.blog_box > h3 { 
+	font-family: 'Recoleta-Bold';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 32px;
+	line-height: 44px;
+	color: #052145; 
+	margin-bottom: 20px;
+}
+
+.blog_details_img img{
+	width: 100%;
+	height: 481px;
+	object-fit: cover;
+	border-radius: 20px;
+}
+
+.blog_box > ul li a { 
+	font-family: 'Recoleta-Bold';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 22px;
+	color: #052145;
+	transition: 0.3s;
+}
+
+.blog_box > ul li a:hover {
+	color: #0074CC;
+}
+
+.blog_box > ul {
+	display: flex;
+	align-items: center;
+	margin-bottom: 20px;
+	gap: 6px;
+}
+
+.blog_details_btn {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 25px;
+}
+
+.blog_details_btn ul {
+	display: flex;
+	gap: 25px;
+}
+
+.blog_details_btn ul li a {
+	font-size: 24px;
+	color: #052145;
+}
+
+.blog_details_area{
+	padding-bottom: 90px;
+}
+
+.blog_box_details{
+	margin-top: 35px;
+}
+
+.blog_details_text p{
+	margin-bottom: 25px;
 }
 
 /*======================  End Page  ======================*/
