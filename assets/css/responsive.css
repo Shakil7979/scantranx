@@ -243,6 +243,9 @@
     .feature_btn_slide .owl-next { 
         right: 0;
     }
+    .partners_single img {
+        width: 100px;
+    }
 }
 
 @media all and (max-width: 450px){

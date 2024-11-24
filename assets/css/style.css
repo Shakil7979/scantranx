@@ -1299,6 +1299,35 @@ button:focus-within {
 	margin-bottom: 25px;
 }
 
+.mission_text h5 {
+	margin-bottom: 10px;
+}
+
+.banner_left.mission_text ul {
+	list-style: disc;
+	margin-left: 29px;
+}
+.our_partner,
+.mission_btn{
+	margin-top: 30px;
+}
+
+.partners_row {
+	display: flex;
+	align-items: center;
+	gap: 30px;
+	justify-content: center;
+}
+
+/* .partners_single {
+	height: 63px;
+	width: 170px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+} */
+
+
 /*======================  End Page  ======================*/
 
 
