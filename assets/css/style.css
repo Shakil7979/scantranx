@@ -1324,7 +1324,7 @@ button:focus-within {
 	max-width: 509px;
 	height: 48px;
 	border-radius: 10px;
-	border: 1px solid #ddd;
+	border: 1px solid #052145;
 	padding: 0 15px 0 40px;
 	font-size: 16px;
 }
@@ -1333,12 +1333,91 @@ button:focus-within {
 	position: relative;
 }
 
-.input_group i {
+.input_group img {
 	position: absolute;
-	top: 14px; 
-	left: 16px;
+	top: 12px;
+	left: 12px;
+}
+
+.input_group{
+	flex: 0 0 80%;
+}
+
+.search_input {
+	display: flex;
+	gap: 13px;
+}
+
+.search_filter_select {
+	display: flex;
+	justify-content: flex-end;
+	gap: 13px; 
+}
+
+.single_filter{
+	position: relative;
+
+}
+
+.single_filter select {
+	height: 48px;
+	max-width: 187px;
+	border-radius: 8px;
+	background: transparent;
+	padding: 0 25px 0 40px;
+	border: 1px solid #052145;
+	width: 100%;
+}
+
+.single_filter img {
+	position: absolute;
+	top: 12px;
+	left: 12px;
+}
+
+.job_content_left h3 { 
+	font-family: 'Recoleta-Bold';
+	font-style: normal;
+	font-weight: 400;
 	font-size: 20px;
-	color: #6c6c6c;
+	line-height: 27px;
+	color: #052145; 
+	margin-bottom: 4px;
+}
+
+.job_content_left p { 
+	font-family: 'TT Norms Pro';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	color: #052145; 
+}
+
+.job_serach_single {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.job_ul ul {
+	display: flex;
+	align-items: center;
+	margin-top: 20px;
+	gap: 15px;
+}
+
+.job_ul ul li {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.job_serach_single {
+	padding: 30px;
+	border: 1px solid #eee;
+	border-radius: 15px;
+	margin-top: 30px;
 }
 
 /*======================  End Page  ======================*/

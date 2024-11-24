@@ -8,6 +8,9 @@
         font-size: 36px; 
         line-height: 44px;
     }
+    .input_group {
+        flex: 0 0 68%;
+    }
 }
 
 @media all and (max-width: 1199px){
@@ -57,6 +60,16 @@
         padding: 25px 0;
         z-index: 999999;
         display: none;
+    }
+    .input_group input { 
+        max-width: 574px; 
+    }
+    .search_filter_select { 
+        justify-content: space-between; 
+        margin-top: 25px;
+    }
+    .input_group {
+        flex: 0 0 82%;
     }
     .pricng_box{
         overflow-x: scroll;
@@ -126,8 +139,19 @@
     .banner_left h2 {
         font-size: 32px;
     }
+    .job_serach_single { 
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .input_group {
+        flex: 0 0 75%;
+    }
     .banner_img {
         margin-top: 40px;
+    }
+    .job_ul ul { 
+        flex-wrap: wrap;
     }
     .link_blog { 
         font-size: 25px;
@@ -198,10 +222,19 @@
         font-size: 32px;
         line-height: 40px; 
     }
+    .search_input_btn {
+        flex: 0 0 auto;
+    }
     .section_title p { 
         font-size: 14px; 
         line-height: 20px;
     }
+    .input_group {
+        flex: 1 0 55%;
+    }
+    /* .input_group {
+        flex: 0 0 70%;
+    } */
     .link_blog_item { 
         font-size: 18px; 
     }
@@ -252,6 +285,10 @@
     .blog_area .section_title h2 {
         font-size: 24px;
         line-height: 40px;
+    }
+    
+    .input_group {
+        flex: 1 0 45%;
     }
 }
  
