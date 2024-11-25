@@ -1615,6 +1615,10 @@ button:focus-within {
 	margin-right: 5px;
 }
 
+.contact_img img {
+	width: 100%;
+}
+
 
 
 /*======================  End Page  ======================*/
