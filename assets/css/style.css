@@ -1589,6 +1589,32 @@ button:focus-within {
 	display: none;
 }
 
+.partner_form {
+	width: 100%;
+	max-width: 1030px;
+	margin: 0 auto;
+}
+
+.mail_numbner ul {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 80px;
+}
+
+.mail_numbner ul li a { 
+	font-family: 'Recoleta-Bold';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 26px;
+	line-height: 34px;
+	color: #2E2E2E; 
+}
+
+.mail_numbner ul li i {
+	color: #0091FF;
+	margin-right: 5px;
+}
+
 
 
 /*======================  End Page  ======================*/
