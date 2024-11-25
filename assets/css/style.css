@@ -147,15 +147,17 @@ p {
 	flex-direction: column;
 	gap: 2px !important;
 	position: absolute;
-	width: 120px;
+	width: 130px;
 	background: #fff;
 	box-shadow: 0 2px 10px #ddd;
-	padding: 10px;
+	padding: 16px;
 	border-radius: 5px;
 	top: 30px;
 	opacity: 0;
 	visibility: hidden;
+	z-index: 99999;
 }
+
 .menu ul li i,
 .menu ul li{
 	transition: 0.3s;
@@ -170,8 +172,13 @@ p {
 	transform: rotate(180deg);
 } 
 
+.header_area .dropdown-toggle::after { 
+	display: none;
+}
+
 .menu ul li {
 	position: relative;
+	padding: 6px 0;
 }
 
 .banner_img img {
@@ -367,8 +374,8 @@ p {
 	border-radius: 10px; 
 }
 
-.possible_cont a { 
-	font-size: 14px;
+.possible_cont a {
+	font-size: 18px;
 	color: #052145;
 	text-decoration: underline;
 }

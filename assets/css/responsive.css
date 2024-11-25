@@ -64,6 +64,13 @@
         z-index: 999999;
         display: none;
     }
+    .drop_down_menu.active {
+        opacity: 1;
+        visibility: visible;
+    }
+    .possible_cont a {
+        font-size: 14px; 
+    }
     
     .mail_numbner ul { 
         flex-wrap: wrap;

@@ -269,3 +269,12 @@ $(document).ready(function() {
 		});
 	}
 });
+
+
+
+$(document).on('click', '.dropdown-toggle', function(e) {
+    e.preventDefault(); // Prevent default link behavior
+    const $dropdown = $(this).next('.drop_down_menu');
+    $('.drop_down_menu').not($dropdown).removeClass('active'); // Close other dropdowns
+    $dropdown.toggleClass('active'); // Toggle visibility of the clicked dropdown
+});
