@@ -201,7 +201,7 @@ p {
 
 .banner_blur_2 {
 	position: absolute;
-	left: 100px;
+	left: 0;
 	bottom: -50%;
 	z-index: 9;
 	width: 700px;
