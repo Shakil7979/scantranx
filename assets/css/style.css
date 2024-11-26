@@ -209,7 +209,7 @@ p {
 
 .banner{
 	position: relative;
-	z-index: 9999;
+	z-index: 999;
 }
 
 .banner_left h2 { 
@@ -736,7 +736,7 @@ button:focus-within {
 	padding: 30px;
 	border-radius: 10px;
 	height: auto;
-	z-index: 999;
+	z-index: 99999;
 	top: 173px;
 }
 
