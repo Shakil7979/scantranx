@@ -185,8 +185,8 @@ p {
 	width: 100%;
 }
 
-.banner_area { 
-	padding: 82px 0 71px 0;
+.banner_area {
+	padding: 45px 0 71px 0;
 	position: relative;
 	overflow: hidden;
 }
@@ -209,7 +209,7 @@ p {
 
 .banner{
 	position: relative;
-	z-index: 9;
+	z-index: 9999;
 }
 
 .banner_left h2 { 
