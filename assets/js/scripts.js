@@ -278,3 +278,14 @@ $(document).on('click', '.dropdown-toggle', function(e) {
     $('.drop_down_menu').not($dropdown).removeClass('active'); // Close other dropdowns
     $dropdown.toggleClass('active'); // Toggle visibility of the clicked dropdown
 });
+
+
+
+document.querySelectorAll('.open-calendly').forEach(function(button) {
+	button.addEventListener('click', function(event) {
+	  event.preventDefault();
+	  Calendly.initPopupWidget({ url: 'https://calendly.com/scantranx/demo' }); 
+	});
+
+	return false;
+});
