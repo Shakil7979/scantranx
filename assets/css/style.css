@@ -440,6 +440,7 @@ p {
 .single_customer_img img {
 	margin: 0 auto;
 	width: 120px !important;
+	border-radius: 100%;
 }
 
 .customer_content p {   
@@ -1626,8 +1627,22 @@ button:focus-within {
 	width: 100%;
 }
 
+.banner_left .banner_left h5 { 
+	margin: 20px 0 0 0;
+	font-size: 20px;
+}
 
+.banner_left .banner_left p { 
+	margin-top: 8px;
+	margin-bottom: 15px;
+}
 
+.banner_img.home_page_bnr_img { 
+	text-align: right;
+}
+.banner_img.home_page_bnr_img img {
+	width: 82%;
+}
 /*======================  End Page  ======================*/
 
 
