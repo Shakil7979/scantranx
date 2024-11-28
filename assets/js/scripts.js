@@ -318,3 +318,168 @@ $(document).ready(function () {
         }
     });
 });
+
+
+
+ 
+
+
+
+// $(document).ready(function() {
+//     // Check if there's a hash in the URL
+//     const hash = window.location.hash;
+
+//     if (hash) {
+//         const tabId = hash.substring(1); // This should be 'Customer', 'Omni', etc.
+        
+//         console.log("Tab ID from URL:", tabId); // Debugging tab ID
+        
+//         // Remove active classes from all tabs and tab-content
+//         $('.nav-link').removeClass('active');
+//         $('.tab-pane').removeClass('active show');
+        
+//         // Add active class to the button and corresponding content
+//         $(`#${tabId}-tab`).addClass('active');    // Add 'active' to the button
+//         $(`#${tabId}`).addClass('active show'); 
+// 		   // Add 'active show' to the tab content
+
+// 		$('html, body').animate({
+//             scrollTop: $('#myTab').offset().top - 50 // Adjust -50 to add some offset (if needed)
+//         }, 500); // 500ms for smooth scrolling
+
+//         // Ensure Bootstrap knows about the active tab
+//         const tab = new bootstrap.Tab($(`#${tabId}-tab`)[0]);
+//         tab.show();
+//     } else {
+//         // Default to the first tab if no hash is found
+//         const firstTab = $('.nav-tabs .nav-item:first-child .nav-link');
+//         const firstTabContent = $('.tab-pane:first');
+        
+//         firstTab.addClass('active');
+//         firstTabContent.addClass('active show');
+        
+//         const tab = new bootstrap.Tab(firstTab[0]);
+//         tab.show();
+//     }
+// });
+
+
+
+
+
+
+$(document).ready(function() {
+    function activateTab(tabId) {
+        const tabButton = $(`#${tabId}-tab`);
+        const tabContent = $(`#${tabId}`);
+        
+        // Remove active classes from all tabs and tab-content
+        $('.nav-link').removeClass('active');
+        $('.tab-pane').removeClass('active show');
+        
+        // Add active class to the button and corresponding content
+        tabButton.addClass('active');
+        tabContent.addClass('active show');
+        
+        // Smooth scroll to the tab section (adjust -50 for offset if needed)
+        $('html, body').animate({
+            scrollTop: tabContent.offset().top - 50 // Adjust -50 to add some offset (if needed)
+        }, 500); // 500ms for smooth scrolling
+
+        // Initialize and show the Bootstrap tab only after adding active classes
+        const tab = new bootstrap.Tab(tabButton[0]);
+        tab.show();
+    }
+
+    // Check URL hash and activate the tab accordingly
+    const hash = window.location.hash;
+    if (hash) {
+        const tabId = hash.substring(1); // This should be 'Customer', 'Omni', etc.
+        console.log("Tab ID from URL:", tabId); // Debugging tab ID
+        
+        activateTab(tabId);
+    } else {
+        // Default to the first tab if no hash is found
+        const firstTab = $('.nav-tabs .nav-item:first-child .nav-link');
+        const firstTabContent = $('.tab-pane:first');
+        
+        firstTab.addClass('active');
+        firstTabContent.addClass('active show');
+        
+        const tab = new bootstrap.Tab(firstTab[0]);
+        tab.show();
+    }
+
+    // When a link inside the footer is clicked
+    $('.feature_item_link a').on('click', function(e) {
+        e.preventDefault(); // Prevent default link behavior
+        
+        const tabId = $(this).attr('href').substring(1); // This will give 'Inventory', 'Omni', etc.
+        
+        // Call the activateTab function for the tab ID
+        activateTab(tabId);
+        
+        // Optionally, update the URL hash to reflect the clicked tab
+        window.location.hash = tabId; // This will add the tab ID to the URL
+    });
+});
+
+
+// test 
+
+$(document).ready(function() {
+    // Function to activate the correct tab and scroll to it
+    function activateTab(tabId) {
+        const tabButton = $(`#${tabId}-tab`);
+        const tabContent = $(`#${tabId}`);
+        
+        // Remove active classes from all tabs and tab-content
+        $('.nav-link').removeClass('active');
+        $('.tab-pane').removeClass('active show');
+        
+        // Add active class to the button and corresponding content
+        tabButton.addClass('active');
+        tabContent.addClass('active show');
+        
+        // Smooth scroll to the tab section (adjust -50 for offset if needed)
+        $('html, body').animate({
+            scrollTop: tabContent.offset().top - 50 // Adjust -50 to add some offset (if needed)
+        }, 500); // 500ms for smooth scrolling
+
+        // Initialize and show the Bootstrap tab only after adding active classes
+        const tab = new bootstrap.Tab(tabButton[0]);
+        tab.show();
+    }
+
+    // When a link inside the feature list is clicked
+    $('.feature_item_link_own a').on('click', function(e) {
+        e.preventDefault(); // Prevent default link behavior
+        
+        const tabId = $(this).attr('href').substring(1); // Extract the tab ID from the link (e.g., 'Inventory', 'Omni')
+        
+        activateTab(tabId); // Activate the corresponding tab
+        
+        // Optionally, update the URL hash to reflect the clicked tab
+        window.location.hash = tabId; // This will add the tab ID to the URL
+    });
+
+    // Check if there is a hash in the URL (for page reloads)
+    const hash = window.location.hash;
+    if (hash) {
+        const tabId = hash.substring(1); // Extract tab ID from URL
+        activateTab(tabId); // Activate the tab based on the URL hash
+    } else {
+        // Default to the first tab if no hash is found
+        const firstTab = $('.nav-tabs .nav-item:first-child .nav-link');
+        const firstTabContent = $('.tab-pane:first');
+        
+        firstTab.addClass('active');
+        firstTabContent.addClass('active show');
+        
+        const tab = new bootstrap.Tab(firstTab[0]);
+        tab.show();
+    }
+});
+
+
+
