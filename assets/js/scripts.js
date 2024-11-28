@@ -319,53 +319,7 @@ $(document).ready(function () {
     });
 });
 
-
-
  
-
-
-
-// $(document).ready(function() {
-//     // Check if there's a hash in the URL
-//     const hash = window.location.hash;
-
-//     if (hash) {
-//         const tabId = hash.substring(1); // This should be 'Customer', 'Omni', etc.
-        
-//         console.log("Tab ID from URL:", tabId); // Debugging tab ID
-        
-//         // Remove active classes from all tabs and tab-content
-//         $('.nav-link').removeClass('active');
-//         $('.tab-pane').removeClass('active show');
-        
-//         // Add active class to the button and corresponding content
-//         $(`#${tabId}-tab`).addClass('active');    // Add 'active' to the button
-//         $(`#${tabId}`).addClass('active show'); 
-// 		   // Add 'active show' to the tab content
-
-// 		$('html, body').animate({
-//             scrollTop: $('#myTab').offset().top - 50 // Adjust -50 to add some offset (if needed)
-//         }, 500); // 500ms for smooth scrolling
-
-//         // Ensure Bootstrap knows about the active tab
-//         const tab = new bootstrap.Tab($(`#${tabId}-tab`)[0]);
-//         tab.show();
-//     } else {
-//         // Default to the first tab if no hash is found
-//         const firstTab = $('.nav-tabs .nav-item:first-child .nav-link');
-//         const firstTabContent = $('.tab-pane:first');
-        
-//         firstTab.addClass('active');
-//         firstTabContent.addClass('active show');
-        
-//         const tab = new bootstrap.Tab(firstTab[0]);
-//         tab.show();
-//     }
-// });
-
-
-
-
 
 
 $(document).ready(function() {
@@ -381,14 +335,17 @@ $(document).ready(function() {
         tabButton.addClass('active');
         tabContent.addClass('active show');
         
-        // Smooth scroll to the tab section (adjust -50 for offset if needed)
-        $('html, body').animate({
-            scrollTop: tabContent.offset().top - 50 // Adjust -50 to add some offset (if needed)
-        }, 500); // 500ms for smooth scrolling
-
         // Initialize and show the Bootstrap tab only after adding active classes
         const tab = new bootstrap.Tab(tabButton[0]);
         tab.show();
+
+        // Wait for the tab to be fully shown before animating the scroll
+        setTimeout(function() {
+            // Smooth scroll to the tab section (adjust -50 for offset if needed)
+            $('html, body').animate({
+                scrollTop: tabContent.offset().top - 50 // Adjust -50 to add some offset (if needed)
+            }, 500); // 500ms for smooth scrolling
+        }, 300); // Delay to ensure tab is fully activated first (you can adjust this delay if needed)
     }
 
     // Check URL hash and activate the tab accordingly
@@ -408,6 +365,13 @@ $(document).ready(function() {
         
         const tab = new bootstrap.Tab(firstTab[0]);
         tab.show();
+        
+        setTimeout(function() {
+            // Scroll to the first tab section smoothly
+            $('html, body').animate({
+                scrollTop: firstTabContent.offset().top - 50
+            }, 500);
+        }, 300); // Delay to ensure the tab is fully activated first
     }
 
     // When a link inside the footer is clicked
@@ -423,6 +387,7 @@ $(document).ready(function() {
         window.location.hash = tabId; // This will add the tab ID to the URL
     });
 });
+
 
 
 // test 
