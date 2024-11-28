@@ -1643,6 +1643,75 @@ button:focus-within {
 .banner_img.home_page_bnr_img img {
 	width: 82%;
 }
+
+
+/* Popup Overlay */
+.popup-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+	padding-top: 200px;
+}
+
+/* Popup Content */
+.popup-content {
+	position: relative;
+	background: #fff; 
+	max-width: 700px;
+	border-radius: 8px;
+	text-align: center;
+	margin: auto;
+}
+
+ 
+
+/* Close Button */
+.close-popup {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #0091FF;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 14px;
+}
+ 
+
+.busines_retail_vide0_2 img {
+	width: 100%;
+}
+
+.popup-content video {
+	width: 100%;
+	border: none; 
+}
+
+.popup-content video {
+    display: block; /* Removes inline-block spacing */
+    margin: 0; /* Removes any default margin */
+    padding: 0; /* Removes any default padding */
+    border: none; /* Removes any border */
+    line-height: 0; /* Prevents spacing caused by line height */
+}
+
+.popup-content {
+    padding: 0; /* Removes padding from the container */
+}
+
+
+
+
+
 /*======================  End Page  ======================*/
 
 

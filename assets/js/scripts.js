@@ -289,3 +289,32 @@ document.querySelectorAll('.open-calendly').forEach(function(button) {
 
 	return false;
 });
+
+
+
+$(document).ready(function () {
+    const videoUrl = "assets/images/home/banner/ScanTranx.mp4";
+
+    // Show popup and play video
+    $(".wathc_video").click(function (e) {
+        e.preventDefault(); // Prevent the default link behavior
+        $("#localVideo source").attr("src", videoUrl);
+        $("#localVideo")[0].load(); // Reload the video source
+        $("#localVideo")[0].play(); // Start playing the video
+        $("#videoPopup").fadeIn();
+    });
+
+    // Close popup and stop video
+    $(".close-popup").click(function () {
+        $("#localVideo")[0].pause(); // Pause the video
+        $("#localVideo")[0].currentTime = 0; // Reset video to the beginning
+        $("#videoPopup").fadeOut();
+    });
+
+    // Close popup on clicking outside the content
+    $("#videoPopup").click(function (e) {
+        if ($(e.target).is("#videoPopup")) {
+            $(".close-popup").click();
+        }
+    });
+});
