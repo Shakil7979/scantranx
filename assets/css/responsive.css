@@ -154,6 +154,9 @@
     .banner_left h2 {
         font-size: 32px;
     }
+    .banner_left .banner_left h5 { 
+        font-size: 16px;
+    }
     .job_serach_single { 
         align-items: flex-start;
         flex-direction: column;
