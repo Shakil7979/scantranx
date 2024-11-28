@@ -1637,13 +1637,7 @@ button:focus-within {
 	margin-bottom: 15px;
 }
 
-.banner_img.home_page_bnr_img { 
-	text-align: right;
-}
-.banner_img.home_page_bnr_img img {
-	width: 82%;
-}
-
+ 
 
 /* Popup Overlay */
 .popup-overlay {
