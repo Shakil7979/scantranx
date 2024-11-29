@@ -181,8 +181,12 @@ p {
 	padding: 6px 0;
 }
 
-.banner_img img {
-	width: 100%;
+.banner_img.home_page_bnr_img {
+	text-align: right;
+}
+
+.banner_img.home_page_bnr_img img {
+	width: 86%;
 }
 
 .banner_area {
